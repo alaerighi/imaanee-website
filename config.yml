@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main   # الفرع لي فيه ملفات موقعك على GitHub
+
+media_folder: "img"       # الصور تتحط هنا داخل مجلد img
+public_folder: "/img"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
